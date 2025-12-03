@@ -142,6 +142,58 @@
         </div>
       </section>
       </div>
+      <aside class="right">
+        <div class="side-section">
+          <div class="side-title">生产周期 <a href="#" style="font-size:12px;color:#667085">出货标准</a></div>
+          <div class="fee-box" style="text-align:center;color:#9aa1a9">暂无交期</div>
+        </div>
+        <div class="side-section">
+          <div class="side-title">发货时间</div>
+          <ul class="lead-list">
+            <li>当天18:00后付款，交期顺延1天</li>
+            <li>当天21:00后EQ处理完成的订单，交期顺延1天</li>
+            <li>周日只接单不安排生产，交期同周一下单一致</li>
+          </ul>
+        </div>
+        <div class="side-section">
+          <div class="side-title">PCB费用明细</div>
+          <div class="fee-box" style="text-align:center;color:#9aa1a9">还未有价格，请填写具体参数</div>
+        </div>
+        <div class="side-section">
+          <div class="side-title">运费/税费试算</div>
+          <div class="field">
+            <label class="label">配送至</label>
+            <select class="select">
+              <option>请选择</option>
+              <option>广东省</option>
+              <option>北京市</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="label">快递公司</label>
+            <select class="select">
+              <option>请选择</option>
+              <option>顺丰</option>
+              <option>京东</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="label">开票类型</label>
+            <select class="select">
+              <option>请选择</option>
+              <option>普票</option>
+              <option>专票</option>
+            </select>
+          </div>
+          <div class="fee-row"><span>PCB制作费：</span><span>￥0.00</span></div>
+          <div class="fee-row"><span>运费：</span><span>￥0.00</span></div>
+          <div class="fee-row"><span>税费：</span><span>￥0.00</span></div>
+          <div class="fee-row"><span>活动折扣：</span><span>-￥0.00</span></div>
+          <div class="fee-total"><span>预估总价：</span><span class="price">￥0.00</span></div>
+          <div style="color:#9aa1a9;font-size:12px;margin-top:6px">仅供参考，最终价格以审核后为准</div>
+          <button class="cta" style="margin-top:10px">立即下单</button>
+        </div>
+      </aside>
     </div>
   </main>
 </template>

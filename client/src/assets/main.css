@@ -10,7 +10,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .footer{border-top:1px solid #1e1e1e;padding:24px 0;margin-top:40px}
 .page{padding:32px 0}
 .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
-.pcb-grid{display:grid;grid-template-columns:240px 1fr;gap:20px}
+.pcb-grid{display:grid;grid-template-columns:240px 1fr 360px;gap:20px}
 .main-wrap{display:flex;flex-direction:column;gap:20px}
 .card{background:#141821;border:1px solid #1e2433;border-radius:12px;padding:20px}
 .btn{height:40px;padding:0 16px;border-radius:10px;border:1px solid #2a3350;background:#1a2030;color:#e6e8ef}
@@ -89,6 +89,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .theme-hq .seg-badge{background:#22c55e;color:#fff}
 .theme-hq .label{color:#4b5563}
 .theme-hq .input{background:#fff;color:var(--text);border-color:var(--border)}
+.theme-hq .select{background:#fff;color:var(--text);border-color:var(--border);height:40px;border-radius:8px;padding:0 12px}
 .theme-hq .mat-table{border-color:var(--border)}
 .theme-hq .mat-head{background:#f9fafb;color:#475569}
 .theme-hq .mat-row{background:#ffffff;color:#334155;border-top-color:var(--border)}
@@ -108,3 +109,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .notice-list{margin-top:8px;color:#9a6a00;font-size:12px}
 .notice-list .item{display:flex;gap:6px;align-items:flex-start;margin-top:6px}
 .notice-list .dot{color:#f59e0b}
+
+/* 右侧侧栏 */
+.right{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
+.side-section{border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:12px;background:#fff}
+.side-title{font-weight:600;margin:0 0 8px}
+.lead-list{color:#9aa1a9;font-size:12px}
+.fee-box{border:1px dashed var(--border);border-radius:10px;padding:10px;margin-top:8px;background:#fafafa}
+.fee-row{display:flex;justify-content:space-between;margin:6px 0}
+.fee-total{display:flex;justify-content:space-between;margin-top:8px;font-weight:700}
+.fee-total .price{color:#e51f2b}
+.cta{display:block;width:100%;height:44px;border-radius:999px;background:#17c964;color:#fff;border:0;font-weight:700}
+.cta:hover{filter:brightness(1.05)}
