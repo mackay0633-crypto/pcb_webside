@@ -11,6 +11,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .page{padding:32px 0}
 .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
 .pcb-grid{display:grid;grid-template-columns:240px 1fr;gap:20px}
+.main-wrap{display:flex;flex-direction:column;gap:20px}
 .card{background:#141821;border:1px solid #1e2433;border-radius:12px;padding:20px}
 .btn{height:40px;padding:0 16px;border-radius:10px;border:1px solid #2a3350;background:#1a2030;color:#e6e8ef}
 .btn.primary{background:var(--primary);border-color:transparent;color:#fff}
@@ -92,3 +93,18 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .theme-hq .mat-head{background:#f9fafb;color:#475569}
 .theme-hq .mat-row{background:#ffffff;color:#334155;border-top-color:var(--border)}
 .theme-hq .mat-row.active{outline:2px solid var(--primary)}
+
+/* 工艺信息色块与提示 */
+.seg-color{display:flex;gap:8px;flex-wrap:wrap}
+.seg-color .seg-item{display:flex;align-items:center;gap:8px}
+.swatch{width:16px;height:16px;border-radius:4px;border:1px solid #d1d5db}
+.swatch.green{background:#16a34a}
+.swatch.blue{background:#2563eb}
+.swatch.red{background:#ef4444}
+.swatch.yellow{background:#f59e0b}
+.swatch.black{background:#111827}
+.swatch.matte{background:#1f2937}
+.swatch.white{background:#ffffff}
+.notice-list{margin-top:8px;color:#9a6a00;font-size:12px}
+.notice-list .item{display:flex;gap:6px;align-items:flex-start;margin-top:6px}
+.notice-list .dot{color:#f59e0b}
