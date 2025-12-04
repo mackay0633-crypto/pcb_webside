@@ -1,15 +1,11 @@
 <template>
   <main class="page theme-hq">
-    <div class="container pcb-grid">
+    <div class="container pcb-grid quote-container">
       <aside class="card side">
-        <div class="side-tabs">
-          <button class="side-tab active">基本信息</button>
-          <button class="side-tab">工艺信息</button>
-          <button class="side-tab">服务信息</button>
-        </div>
+        <AnchorNav :items="anchors" />
       </aside>
       <div class="main-wrap">
-      <section class="card content">
+      <section class="card content quote-section" id="basic-info">
         <div class="hint">温馨提示 请仔细填写PCB相关参数，并确保与相关文件参数一致；PCB生产将以下单参数为准</div>
         <div class="panel upload">
           <div class="upload-box">
@@ -68,7 +64,7 @@
           </div>
         </div>
       </section>
-      <section class="card content">
+      <section class="card content quote-section" id="process-info">
         <h2 style="margin:0 0 12px">工艺信息</h2>
         <div class="panel">
           <h3>板子厚度</h3>
@@ -142,7 +138,7 @@
         </div>
       </section>
       </div>
-      <aside class="right">
+      <aside class="quote-right">
         <div class="side-section">
           <div class="side-title">生产周期 <a href="#" style="font-size:12px;color:#667085">出货标准</a></div>
           <div class="fee-box" style="text-align:center;color:#9aa1a9">暂无交期</div>
@@ -201,6 +197,7 @@
 import { ref } from 'vue'
 import Segmented from '../components/Segmented.vue'
 import MaterialTable from '../components/MaterialTable.vue'
+import AnchorNav from '../components/AnchorNav.vue'
 const category=ref('FR-4')
 const layers=ref(2)
 const hdi=ref('无')
@@ -214,6 +211,11 @@ const materialRows=[
   { value:'RANDOM', brand:'随机品牌（A级）', model:'不指定', tg:'TG130', flame:'94V-0', fee:'不加价' },
   { value:'KB6164_TG135', brand:'建滔KB（A级）', model:'KB6164', tg:'TG135', flame:'94V-0', fee:'起步价20+10元/㎡' },
   { value:'S1000H_TG155', brand:'生益（A级）', model:'S1000H', tg:'TG155', flame:'94V-0', fee:'起步价40+80元/㎡' }
+]
+const anchors=[
+  { id:'basic-info', label:'基本信息' },
+  { id:'process-info', label:'工艺信息' },
+  { id:'service-info', label:'服务信息' }
 ]
 const thickness=ref(1.6)
 const copper=ref('1oz')

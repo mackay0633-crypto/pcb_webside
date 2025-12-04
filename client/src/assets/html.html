@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PCB下单（硬板）结构参考</title>
+  </head>
+  <body>
+    <div class="layout-container">
+      <div class="pcb-container">
+        <div class="quote-container">
+          <form class="quote-left" id="quoteForm">
+            <section id="basic-info" class="quote-section">
+              <header class="quote-header">
+                <h1>PCB下单<span>(硬板)</span></h1>
+              </header>
+              <div class="tips">
+                <span class="label">温馨提示</span>
+                <span class="text">请仔细填写PCB相关参数，并确保与相关文件参数一致；PCB生产将以下单参数为准</span>
+                <a class="link" href="https://www.hqpcb.com/help/c_59.html" target="_blank">下单必看</a>
+                <button class="ack" type="button">我知道了</button>
+              </div>
+
+              <div class="field pcbfile">
+                <label>PCB文件</label>
+                <div class="upload">
+                  <div class="upload-drag">
+                    <p>上传Gerber/PCB文件，<em>自动解析</em>计价参数</p>
+                    <small>zip、rar格式（小于50MB）</small>
+                    <small>暂不支持：CAD、Allegro、Gerber274-D、Protel98及以下版本</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group">
+                <h2>产品类别</h2>
+                <div class="seg">
+                  <button class="seg-item active">FR-4</button>
+                  <button class="seg-item">罗杰斯高频板</button>
+                </div>
+              </div>
+
+              <div class="group">
+                <h2>板子层数</h2>
+                <div class="seg">
+                  <button class="seg-item">1</button>
+                  <button class="seg-item active">2</button>
+                  <button class="seg-item">4</button>
+                  <button class="seg-item">6</button>
+                  <button class="seg-item">8</button>
+                  <button class="seg-item">10</button>
+                  <button class="seg-item">12</button>
+                  <button class="seg-item">14</button>
+                  <button class="seg-item">16</button>
+                  <button class="seg-item">18</button>
+                  <button class="seg-item">20</button>
+                </div>
+              </div>
+
+              <div class="group">
+                <h2>HDI（盲埋孔）</h2>
+                <div class="seg">
+                  <button class="seg-item active">无</button>
+                  <button class="seg-item">1阶</button>
+                  <button class="seg-item">2阶</button>
+                  <button class="seg-item">3阶</button>
+                </div>
+              </div>
+
+              <div class="group">
+                <h2>板材</h2>
+                <table class="material-table">
+                  <thead>
+                    <tr><th>板材品牌</th><th>型号</th><th>TG值</th><th>阻燃性</th><th>指定板材费</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active"><td>随机品牌（A级）</td><td>不指定</td><td>TG130</td><td>94V-0</td><td>不加价</td></tr>
+                    <tr><td>建滔KB（A级）</td><td>KB6164</td><td>TG135</td><td>94V-0</td><td>起步价20+10元/㎡</td></tr>
+                    <tr><td>生益（A级）</td><td>S1000H</td><td>TG155</td><td>94V-0</td><td>起步价40+80元/㎡</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="group">
+                <h2>出货形式</h2>
+                <div class="seg">
+                  <button class="seg-item active">单片出货</button>
+                  <button class="seg-item">连片（按文件）</button>
+                  <button class="seg-item">连片（代拼）</button>
+                </div>
+              </div>
+
+              <div class="group inline-3">
+                <div class="field">
+                  <label>单片尺寸</label>
+                  <div class="inline"><input placeholder="长"><input placeholder="宽"><span>cm</span></div>
+                </div>
+                <div class="field">
+                  <label>单片数量</label>
+                  <div class="inline"><input placeholder="Pcs"></div>
+                </div>
+                <div class="field">
+                  <label>工艺边框</label>
+                  <div class="inline"><input placeholder="mm"></div>
+                </div>
+              </div>
+            </section>
+
+            <section id="process-info" class="quote-section">
+              <h2>工艺信息</h2>
+              <div class="group"><h3>板子厚度</h3><div class="seg"><button class="seg-item">0.6</button><button class="seg-item">0.8</button><button class="seg-item">1.0</button><button class="seg-item">1.2</button><button class="seg-item active">1.6</button><button class="seg-item">2.0</button><button class="seg-item">2.5</button><button class="seg-item">3.0</button><button class="seg-item">3.2</button></div></div>
+              <div class="group"><h3>外层铜厚</h3><div class="seg"><button class="seg-item active">1oz</button><button class="seg-item">2oz</button><button class="seg-item">3oz</button><button class="seg-item">4oz</button></div></div>
+              <div class="group"><h3>最小线宽线距</h3><div class="seg"><button class="seg-item active">10/10</button><button class="seg-item">8/8</button><button class="seg-item">6/6</button><button class="seg-item">5/5</button><button class="seg-item">4/4</button><button class="seg-item">3.5/3.5</button></div></div>
+              <div class="group"><h3>最小孔径</h3><div class="seg"><button class="seg-item active">0.3</button><button class="seg-item">0.25</button><button class="seg-item">0.20</button><button class="seg-item">0.15</button><span>mm</span></div></div>
+              <div class="group"><h3>阻焊颜色</h3><div class="seg"><button class="seg-item active">绿色</button><button class="seg-item">蓝色</button><button class="seg-item">红色</button><button class="seg-item">黄色</button><button class="seg-item">黑色</button><button class="seg-item">哑黑</button><button class="seg-item">白色</button></div></div>
+              <div class="group"><h3>字符颜色</h3><div class="seg"><button class="seg-item">黑色</button><button class="seg-item active">白色</button></div></div>
+              <div class="group"><h3>阻焊覆盖</h3><div class="seg"><button class="seg-item active">过孔盖油</button><button class="seg-item">过孔开窗</button><button class="seg-item">过孔塞油墨</button><button class="seg-item">过孔塞树脂+电镀填平</button></div></div>
+              <div class="group"><h3>盘中孔</h3><div class="seg"><button class="seg-item active">无</button><button class="seg-item">有</button></div></div>
+              <div class="group"><h3>表面处理</h3><div class="seg"><button class="seg-item active">有铅喷锡</button><button class="seg-item">无铅喷锡</button><button class="seg-item">沉金</button><button class="seg-item">OSP</button></div></div>
+              <div class="group"><h3>阻抗</h3><div class="seg"><button class="seg-item active">无</button><button class="seg-item">有</button></div></div>
+              <div class="group"><h3>手指斜边</h3><div class="seg"><button class="seg-item active">无需</button><button class="seg-item">需要</button></div></div>
+              <div class="group"><h3>半孔</h3><div class="seg"><button class="seg-item active">无需</button><button class="seg-item">1边半孔</button><button class="seg-item">2边半孔</button><button class="seg-item">3边半孔</button><button class="seg-item">4边半孔</button></div></div>
+              <div class="group"><h3>包边</h3><div class="seg"><button class="seg-item active">无需</button><button class="seg-item">1边包边</button><button class="seg-item">2边包边</button><button class="seg-item">3边包边</button><button class="seg-item">4边包边</button></div></div>
+            </section>
+
+            <section id="service-info" class="quote-section">
+              <h2>服务信息</h2>
+              <div class="group"><h3>测试方式</h3><div class="seg"><button class="seg-item active">样品免费</button></div></div>
+              <div class="group"><h3>确认生产稿</h3><div class="seg"><button class="seg-item active">无需</button><button class="seg-item">需要（不允许自动确认）</button><button class="seg-item">需要（超时自动确认）</button></div></div>
+              <div class="group"><h3>产品报告</h3><div class="seg"><button class="seg-item active">无需</button><button class="seg-item">出货报告</button><button class="seg-item">切片报告</button><button class="seg-item">实物菲林</button></div></div>
+              <div class="group"><h3>打叉板</h3><div class="seg"><button class="seg-item active">接受</button><button class="seg-item">不接受</button></div></div>
+            </section>
+          </form>
+
+          <aside class="quote-right">
+            <section class="side-block">
+              <h3>生产周期</h3>
+              <div class="placeholder">暂无交期</div>
+            </section>
+            <section class="side-block">
+              <h3>发货时间</h3>
+              <ul>
+                <li>当天18:00后付款，交期顺延1天</li>
+                <li>当天21:00后EQ处理完成的订单，交期顺延1天</li>
+                <li>周日只接单不安排生产，交期同周一下单一致</li>
+              </ul>
+            </section>
+            <section class="side-block">
+              <h3>PCB费用明细</h3>
+              <div class="placeholder">还未有价格，请填写具体参数</div>
+            </section>
+            <section class="side-block">
+              <h3>运费/税费试算</h3>
+              <div class="calc">
+                <div class="row"><span>PCB制作费：</span><strong>￥0.00</strong></div>
+                <div class="row"><span>运费：</span><strong>￥0.00</strong></div>
+                <div class="row"><span>税费：</span><strong>￥0.00</strong></div>
+                <div class="row"><span>活动折扣：</span><strong>-￥0.00</strong></div>
+                <div class="row total"><span>预估总价：</span><strong>￥0.00</strong></div>
+                <button class="cta" type="button">立即下单</button>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
