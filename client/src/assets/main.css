@@ -68,6 +68,9 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .seg-item.active{background:#17c964;color:#092b1b;border-color:#17c964}
 .seg-badge{margin-left:6px;border-radius:10px;padding:2px 6px;font-size:12px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.checkbox-group{display:flex;gap:12px;flex-wrap:wrap}
+.checkbox-label{display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer}
 .inline{display:flex;gap:8px;align-items:center}
 .unit{color:#aab0c0}
 .note{color:#aab0c0;font-size:12px;margin-top:6px}

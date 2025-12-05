@@ -137,6 +137,49 @@
           <Segmented v-model="edgeWrap" :options="edgeWrapOptions" />
         </div>
       </section>
+      <section class="card content quote-section" id="service-info">
+        <h2 style="margin:0 0 12px">服务信息</h2>
+        <div class="panel">
+          <h3>测试方式</h3>
+          <Segmented v-model="testMethod" :options="testMethodOptions" />
+        </div>
+        <div class="panel">
+          <h3>确认生产稿</h3>
+          <Segmented v-model="confirmFile" :options="confirmFileOptions" />
+          <div class="note">选择"需要"会增加生产周期，请知悉</div>
+        </div>
+        <div class="panel">
+          <h3>产品报告</h3>
+          <div class="checkbox-group">
+             <label v-for="opt in reportOptions" :key="opt.value" class="checkbox-label">
+               <input type="checkbox" :value="opt.value" v-model="reports">
+               {{ opt.label }}
+             </label>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>打叉板</h3>
+          <Segmented v-model="crossBoard" :options="crossBoardOptions" />
+        </div>
+        <div class="panel">
+          <h3>隔纸</h3>
+          <Segmented v-model="paperSep" :options="paperSepOptions" />
+        </div>
+        <div class="panel grid-2">
+           <div>
+             <label class="label">客户编号</label>
+             <input class="input" v-model="customerNo" placeholder="选填" />
+           </div>
+           <div>
+             <label class="label">内部标识</label>
+             <input class="input" v-model="internalLabel" placeholder="选填" />
+           </div>
+        </div>
+        <div class="panel">
+          <h3>成品数量</h3>
+          <Segmented v-model="qtyHandling" :options="qtyHandlingOptions" />
+        </div>
+      </section>
       </div>
       <aside class="quote-right">
         <div class="side-section">
@@ -241,4 +284,20 @@ const impedanceOptions=['无','有'].map(x=>({label:x,value:x}))
 const fingerBevelOptions=['无需','需要'].map(x=>({label:x,value:x}))
 const halfHoleOptions=['无需','1边半孔','2边半孔','3边半孔','4边半孔'].map(x=>({label:x,value:x}))
 const edgeWrapOptions=['无需','1边包边','2边包边','3边包边','4边包边'].map(x=>({label:x,value:x}))
+
+const testMethod=ref('飞针测试')
+const confirmFile=ref('不需要')
+const reports=ref([])
+const crossBoard=ref('接受')
+const paperSep=ref('无')
+const customerNo=ref('')
+const internalLabel=ref('')
+const qtyHandling=ref('拒绝多余')
+
+const testMethodOptions=['飞针测试','测试架测试'].map(x=>({label:x,value:x}))
+const confirmFileOptions=['不需要','需要'].map(x=>({label:x,value:x}))
+const reportOptions=['成品检测报告','铜厚切片报告','板材切片报告','阻抗报告','可焊性报告'].map(x=>({label:x,value:x}))
+const crossBoardOptions=['接受','不接受'].map(x=>({label:x,value:x}))
+const paperSepOptions=['无','一张一隔'].map(x=>({label:x,value:x}))
+const qtyHandlingOptions=['拒绝多余','接受多余'].map(x=>({label:x,value:x}))
 </script>
