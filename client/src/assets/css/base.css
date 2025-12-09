@@ -1,0 +1,94 @@
+:root {
+  --bg: #f7f7f7;
+  --surface: #141821;
+  --text: #e6e8ef;
+  --muted: #aab0c0;
+  --primary: #5d7cff;
+  
+  /* Theme HQ Variables */
+  --bg-hq: #f5f7fa;
+  --surface-hq: #ffffff;
+  --text-hq: #333333;
+  --muted-hq: #667085;
+  --border-hq: #e5e7eb;
+  --primary-hq: #17c964;
+  --primary-weak-hq: #e9fbf1;
+  --danger-hq: #e51f2b;
+  --panel-hq: #ffffff;
+  --panel-border-hq: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  border-top: 1px solid #1e1e1e;
+  padding: 24px 0;
+  margin-top: 40px;
+}
+
+.page {
+  padding: 32px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Theme HQ Overrides */
+.theme-hq {
+  --bg: var(--bg-hq);
+  --surface: var(--surface-hq);
+  --text: var(--text-hq);
+  --muted: var(--muted-hq);
+  --border: var(--border-hq);
+  --primary: var(--primary-hq);
+  --primary-weak: var(--primary-weak-hq);
+  --danger: var(--danger-hq);
+  --panel: var(--panel-hq);
+  --panel-border: var(--panel-border-hq);
+}
+
+.theme-hq .page {
+  background: var(--bg);
+}

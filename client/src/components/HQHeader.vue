@@ -3,7 +3,7 @@
     <div class="hq-topbar">
       <div class="container hq-top">
         <div class="hq-top-left">
-          <span>电子产业一站式服务平台</span>
+          <span>DAPE 电子产业一站式服务平台</span>
         </div>
         <div class="hq-top-right">
           <a href="#">我的订单</a>
@@ -15,11 +15,7 @@
     <div class="hq-mainbar">
       <div class="container hq-main">
         <div class="hq-brand">
-          <img src="/src/assets/logo-hq.svg" alt="HQPCB" width="40" height="40" />
-          <div class="hq-brand-text">
-            <div class="hq-brand-title">华秋PCB</div>
-            <div class="hq-brand-sub">高可靠多层板制造商</div>
-          </div>
+          <img src="/src/assets/logo-dape.svg" alt="DAPE" height="40" />
         </div>
         <nav class="hq-nav">
           <router-link class="nav-item" to="/">首页</router-link>
@@ -30,10 +26,6 @@
               <router-link class="dd-item" to="/quote/hdi">HDI板计价</router-link>
               <router-link class="dd-item" to="/quote/rf">高频板计价 <span class="pill pill-new">new</span></router-link>
               <router-link class="dd-item" to="/quote/fpc">FPC计价</router-link>
-              <router-link class="dd-item" to="/quote/smt">SMT计价 <span class="pill pill-sale">降价</span></router-link>
-              <router-link class="dd-item" to="/quote/layout">Layout计价</router-link>
-              <router-link class="dd-item" to="/quote/stencil">钢网计价</router-link>
-              <router-link class="dd-item" to="/quote/bom">BOM配单</router-link>
             </div>
           </div>
           <a class="nav-item" href="#">元器件采购</a>
@@ -49,10 +41,6 @@
           <router-link class="sub-item" to="/quote/rf">高频板计价</router-link>
           <router-link class="sub-item" to="/quote/hdi">HDI板计价</router-link>
           <router-link class="sub-item" to="/quote/fpc">FPC计价</router-link>
-          <router-link class="sub-item" to="/quote/smt">SMT计价</router-link>
-          <router-link class="sub-item" to="/quote/layout">Layout计价</router-link>
-          <router-link class="sub-item" to="/quote/stencil">钢网计价</router-link>
-          <router-link class="sub-item" to="/quote/bom">BOM配单</router-link>
         </div>
       </div>
     </div>
