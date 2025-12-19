@@ -32,7 +32,7 @@
           <a class="nav-item" href="#">DFM分析</a>
           <a class="nav-item" href="#">PCB设计</a>
           <a class="nav-item" href="#">制造能力</a>
-          <a class="nav-item" href="#">关于华秋</a>
+          <router-link class="nav-item" to="/about">关于DAPE</router-link>
         </nav>
       </div>
       <div class="hq-subnav">
